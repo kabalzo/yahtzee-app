@@ -1,0 +1,28 @@
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\.CsharpProjects\Yahtzee\bin\Debug\net7.0\Yahtzee.exe
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\.CsharpProjects\Yahtzee\bin\Debug\net7.0\Yahtzee.deps.json
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\.CsharpProjects\Yahtzee\bin\Debug\net7.0\Yahtzee.runtimeconfig.json
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\.CsharpProjects\Yahtzee\bin\Debug\net7.0\Yahtzee.dll
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\.CsharpProjects\Yahtzee\bin\Debug\net7.0\Yahtzee.pdb
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\.CsharpProjects\Yahtzee\obj\Debug\net7.0\Yahtzee.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\.CsharpProjects\Yahtzee\obj\Debug\net7.0\Yahtzee.AssemblyInfoInputs.cache
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\.CsharpProjects\Yahtzee\obj\Debug\net7.0\Yahtzee.AssemblyInfo.cs
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\.CsharpProjects\Yahtzee\obj\Debug\net7.0\Yahtzee.csproj.CoreCompileInputs.cache
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\.CsharpProjects\Yahtzee\obj\Debug\net7.0\Yahtzee.dll
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\.CsharpProjects\Yahtzee\obj\Debug\net7.0\refint\Yahtzee.dll
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\.CsharpProjects\Yahtzee\obj\Debug\net7.0\Yahtzee.pdb
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\.CsharpProjects\Yahtzee\obj\Debug\net7.0\Yahtzee.genruntimeconfig.cache
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\.CsharpProjects\Yahtzee\obj\Debug\net7.0\ref\Yahtzee.dll
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\bin\Debug\net7.0\Yahtzee.exe
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\bin\Debug\net7.0\Yahtzee.deps.json
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\bin\Debug\net7.0\Yahtzee.runtimeconfig.json
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\bin\Debug\net7.0\Yahtzee.dll
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\bin\Debug\net7.0\Yahtzee.pdb
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\obj\Debug\net7.0\Yahtzee.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\obj\Debug\net7.0\Yahtzee.AssemblyInfoInputs.cache
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\obj\Debug\net7.0\Yahtzee.AssemblyInfo.cs
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\obj\Debug\net7.0\Yahtzee.csproj.CoreCompileInputs.cache
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\obj\Debug\net7.0\Yahtzee.dll
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\obj\Debug\net7.0\refint\Yahtzee.dll
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\obj\Debug\net7.0\Yahtzee.pdb
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\obj\Debug\net7.0\Yahtzee.genruntimeconfig.cache
+C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\obj\Debug\net7.0\ref\Yahtzee.dll
