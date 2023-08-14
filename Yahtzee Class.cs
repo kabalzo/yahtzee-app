@@ -41,6 +41,44 @@
             rollDie4();
             rollDie5();
     }
+    public void playGame() {
+        string userInputFromKeyboard;
+        int input;
+        Console.WriteLine("Welcome to the Yahtzee app!");
+        while(true) {
+            while (true) {
+                Console.WriteLine($"Turn {this.turnCounter}");
+                Console.WriteLine("Press [Enter] key to roll the dice");
+                Console.WriteLine("Type 'score' to display the score");
+                Console.WriteLine("Type 'rules' if you want to see the rules");
+                Console.WriteLine("Type 'quit' to end the game");
+
+                userInputFromKeyboard = Console.ReadLine();
+                input = this.nextUserAction(userInputFromKeyboard);
+                if(input == -2) {
+                    break;
+                }
+                else if (input == -1) {
+                    continue;
+                }
+                else {
+                    input = 0;
+                    break;
+                }
+            }
+            if (input != 0) {
+                this.rollAllDice();
+                this.displayCurrentDiceValues();
+                if (this.isYahtzee()) {
+                    break;
+                }
+                this.turnCounter++;
+            }
+            else {
+                break;
+            }
+        }
+    }
     public void displayCurrentDiceValues() {
             Console.WriteLine("Die 1: " + die1);
             Console.WriteLine("Die 2: " + die2);
