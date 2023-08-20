@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dkabala\\OneDrive - University of Iowa\\Desktop\\My Stuff\\Dev Projects\\yahtzee-app\\Yahtzee.csproj": {}
+    "C:\\Users\\kabal\\OneDrive\\Desktop\\Dev Stuff\\yahtzee-app\\Yahtzee.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dkabala\\OneDrive - University of Iowa\\Desktop\\My Stuff\\Dev Projects\\yahtzee-app\\Yahtzee.csproj": {
+    "C:\\Users\\kabal\\OneDrive\\Desktop\\Dev Stuff\\yahtzee-app\\Yahtzee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dkabala\\OneDrive - University of Iowa\\Desktop\\My Stuff\\Dev Projects\\yahtzee-app\\Yahtzee.csproj",
+        "projectUniqueName": "C:\\Users\\kabal\\OneDrive\\Desktop\\Dev Stuff\\yahtzee-app\\Yahtzee.csproj",
         "projectName": "Yahtzee",
-        "projectPath": "C:\\Users\\dkabala\\OneDrive - University of Iowa\\Desktop\\My Stuff\\Dev Projects\\yahtzee-app\\Yahtzee.csproj",
-        "packagesPath": "C:\\Users\\dkabala\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dkabala\\OneDrive - University of Iowa\\Desktop\\My Stuff\\Dev Projects\\yahtzee-app\\obj\\",
+        "projectPath": "C:\\Users\\kabal\\OneDrive\\Desktop\\Dev Stuff\\yahtzee-app\\Yahtzee.csproj",
+        "packagesPath": "C:\\Users\\kabal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kabal\\OneDrive\\Desktop\\Dev Stuff\\yahtzee-app\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dkabala\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\kabal\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

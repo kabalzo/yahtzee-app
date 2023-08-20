@@ -26,3 +26,17 @@ C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yah
 C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\obj\Debug\net7.0\Yahtzee.pdb
 C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\obj\Debug\net7.0\Yahtzee.genruntimeconfig.cache
 C:\Users\dkabala\OneDrive - University of Iowa\Desktop\My Stuff\Dev Projects\yahtzee-app\obj\Debug\net7.0\ref\Yahtzee.dll
+C:\Users\kabal\OneDrive\Desktop\Dev Stuff\yahtzee-app\bin\Debug\net7.0\Yahtzee.exe
+C:\Users\kabal\OneDrive\Desktop\Dev Stuff\yahtzee-app\bin\Debug\net7.0\Yahtzee.deps.json
+C:\Users\kabal\OneDrive\Desktop\Dev Stuff\yahtzee-app\bin\Debug\net7.0\Yahtzee.runtimeconfig.json
+C:\Users\kabal\OneDrive\Desktop\Dev Stuff\yahtzee-app\bin\Debug\net7.0\Yahtzee.dll
+C:\Users\kabal\OneDrive\Desktop\Dev Stuff\yahtzee-app\bin\Debug\net7.0\Yahtzee.pdb
+C:\Users\kabal\OneDrive\Desktop\Dev Stuff\yahtzee-app\obj\Debug\net7.0\Yahtzee.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kabal\OneDrive\Desktop\Dev Stuff\yahtzee-app\obj\Debug\net7.0\Yahtzee.AssemblyInfoInputs.cache
+C:\Users\kabal\OneDrive\Desktop\Dev Stuff\yahtzee-app\obj\Debug\net7.0\Yahtzee.AssemblyInfo.cs
+C:\Users\kabal\OneDrive\Desktop\Dev Stuff\yahtzee-app\obj\Debug\net7.0\Yahtzee.csproj.CoreCompileInputs.cache
+C:\Users\kabal\OneDrive\Desktop\Dev Stuff\yahtzee-app\obj\Debug\net7.0\Yahtzee.dll
+C:\Users\kabal\OneDrive\Desktop\Dev Stuff\yahtzee-app\obj\Debug\net7.0\refint\Yahtzee.dll
+C:\Users\kabal\OneDrive\Desktop\Dev Stuff\yahtzee-app\obj\Debug\net7.0\Yahtzee.pdb
+C:\Users\kabal\OneDrive\Desktop\Dev Stuff\yahtzee-app\obj\Debug\net7.0\Yahtzee.genruntimeconfig.cache
+C:\Users\kabal\OneDrive\Desktop\Dev Stuff\yahtzee-app\obj\Debug\net7.0\ref\Yahtzee.dll
