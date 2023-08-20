@@ -3,7 +3,7 @@ using System;
 namespace MyApp {
     class Run {
         public static void Main(String[] args) {
-            Yahtzee game = new Yahtzee();
+            Yahtzee game = new();
             game.PlayGame();
             Console.WriteLine("Thanks for Playing!");
         }

@@ -22,28 +22,36 @@ class Yahtzee {
 
     public string theRules = "Roll 5 dice on your first turn\nKeep 0-5 and roll up to twice more with the rest\nFill entries on the scorecard each turn with the result of the rolls\n\nUPPER SECTION\n(Aces) Count and add only aces\n(Twos) Count and add only twos\n(Threes) Count and add only threes\n(Fours) Count and add only fours\n(Fives) Count and add only fives\n(Sixes) Count and add only sixes\nIf total score of upper is 63 or greater, bonus 35 points\n\nLOWER SECTION\n(3 of a kind) Add total of all dice\n(4 of a kind) Add total of all dice\n(Full House) Two of one kind, three of another. Score 25\n(Small straight) Sequence of 4. Score 30\n(Large straight) Sequence of 5. Score 40\n(Yahtzee) 5 of a kind. Score 50\n(Chance) Add total of all dice\n(Yahtzee bonus) 100 bonus points for each additional Yahtzee after the first\n";
 
-    public void RollDie1() {
-            die1 = roll1.Next(1,7);
+    void RollSingleDie(int die) {
+        switch (die) {
+            case 1:
+                die1 = roll1.Next(1,7);
+                break;
+            case 2:
+                die2 = roll2.Next(1,7);
+                break;
+            case 3:
+                die3 = roll3.Next(1,7);
+                break;
+            case 4:
+                die4 = roll4.Next(1,7);
+                break;
+            case 5:
+                die5 = roll5.Next(1,7);
+                break;
+        }
     }
-    public void RollDie2() {
-            die2 = roll2.Next(1,7);
-    }
-    public void RollDie3() {
-            die3 = roll3.Next(1,7);
-    }
-    public void RollDie4() {
-            die4 = roll4.Next(1,7);
-    }
-    public void RollDie5() {
-            die5 = roll5.Next(1,7);
-    }
+
+    //Get new integer values between 1-6 for every die 
     public void RollAllDice() {
-            RollDie1();
-            RollDie2();
-            RollDie3();
-            RollDie4();
-            RollDie5();
+       RollSingleDie(1);
+       RollSingleDie(2);
+       RollSingleDie(3);
+       RollSingleDie(4);
+       RollSingleDie(5);
     }
+
+    //Display the values of all 5 die at any given moment
     void DisplayCurrentDiceValues() {
         Console.WriteLine("Die 1: " + die1);
         Console.WriteLine("Die 2: " + die2);
@@ -96,6 +104,8 @@ class Yahtzee {
     void PlayHand() {
         int handRoll = 0;
     }
+
+    //Main method to invoke the game. Only call this from another file
     public void PlayGame() {
         Console.WriteLine("Welcome to the Yahtzee app!");
         while(true) {
