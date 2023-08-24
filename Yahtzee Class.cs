@@ -3,26 +3,26 @@ using System.Runtime.CompilerServices;
 
 class Yahtzee {
 
-    public Random roll1 = new();
-    public Random roll2 = new();
-    public Random roll3 = new();
-    public Random roll4 = new();
-    public Random roll5 = new();
+    private Random roll1 = new();
+    private Random roll2 = new();
+    private Random roll3 = new();
+    private Random roll4 = new();
+    private Random roll5 = new();
 
     private int totalScore = 0;
-    public int yahtzeeBonus = 0;
-    public int handScore = 0; 
-    public int turnCounter = 1;
+    private int yahtzeeBonus = 0;
+    private int handScore = 0; 
+    private int turnCounter = 1;
 
-    public int die1;
-    public int die2;  
-    public int die3;  
-    public int die4; 
-    public int die5; 
+    private int die1;
+    private int die2;  
+    private int die3;  
+    private int die4; 
+    private int die5; 
 
-    public string theRules = "Roll 5 dice on your first turn\nKeep 0-5 and roll up to twice more with the rest\nFill entries on the scorecard each turn with the result of the rolls\n\nUPPER SECTION\n(Aces) Count and add only aces\n(Twos) Count and add only twos\n(Threes) Count and add only threes\n(Fours) Count and add only fours\n(Fives) Count and add only fives\n(Sixes) Count and add only sixes\nIf total score of upper is 63 or greater, bonus 35 points\n\nLOWER SECTION\n(3 of a kind) Add total of all dice\n(4 of a kind) Add total of all dice\n(Full House) Two of one kind, three of another. Score 25\n(Small straight) Sequence of 4. Score 30\n(Large straight) Sequence of 5. Score 40\n(Yahtzee) 5 of a kind. Score 50\n(Chance) Add total of all dice\n(Yahtzee bonus) 100 bonus points for each additional Yahtzee after the first\n";
+    private readonly string theRules = "\nRoll 5 dice on your first turn\nKeep 0-5 and roll up to twice more with the rest\nFill entries on the scorecard each turn with the result of the rolls\n\nUPPER SECTION\n(Aces) Count and add only aces\n(Twos) Count and add only twos\n(Threes) Count and add only threes\n(Fours) Count and add only fours\n(Fives) Count and add only fives\n(Sixes) Count and add only sixes\nIf total score of upper is 63 or greater, bonus 35 points\n\nLOWER SECTION\n(3 of a kind) Add total of all dice\n(4 of a kind) Add total of all dice\n(Full House) Two of one kind, three of another. Score 25\n(Small straight) Sequence of 4. Score 30\n(Large straight) Sequence of 5. Score 40\n(Yahtzee) 5 of a kind. Score 50\n(Chance) Add total of all dice\n(Yahtzee bonus) 100 bonus points for each additional Yahtzee after the first\n";
 
-    void RollSingleDie(int die) {
+    private void RollSingleDie(int die) {
         switch (die) {
             case 1:
                 die1 = roll1.Next(1,7);
@@ -43,16 +43,14 @@ class Yahtzee {
     }
 
     //Get new integer values between 1-6 for every die 
-    public void RollAllDice() {
-       RollSingleDie(1);
-       RollSingleDie(2);
-       RollSingleDie(3);
-       RollSingleDie(4);
-       RollSingleDie(5);
+    private void RollAllDice() {
+        for (int i = 1; i <= 5; i++) {
+            RollSingleDie(i);
+        }
     }
 
     //Display the values of all 5 die at any given moment
-    void DisplayCurrentDiceValues() {
+    private void DisplayCurrentDiceValues() {
         Console.WriteLine("Die 1: " + die1);
         Console.WriteLine("Die 2: " + die2);
         Console.WriteLine("Die 3: " + die3);
@@ -61,12 +59,12 @@ class Yahtzee {
     }
     
     //Ask user if they want to see the rules or proceed to the game
-    void DisplayRules() {
+    private void DisplayRules() {
         Console.WriteLine(theRules);
     }
 
     //Check to see if all the dice on any given hand are all the same
-    bool IsYahtzee() {
+    private bool IsYahtzee() {
             if (die1 == die2 && die2 == die3 && die3 == die4 && die4 == die5) {
                 Console.WriteLine("Yahtzee!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                 return true;
@@ -78,7 +76,7 @@ class Yahtzee {
 
     //Return an integer value between 1-5 based on the string input
     //The int value corresponds to the switch statment that controls the game flow
-    int NextUserAction(string userInput) {
+    private int NextUserAction(string userInput) {
         while (true) {
             if (userInput == "score") {
                 return 1;
@@ -101,26 +99,28 @@ class Yahtzee {
 
     //This will be used for holding dice and adding up the score for a hand
     //instead of just rerolling all the dice as it is right now
-    void PlayHand() {
+    private void PlayHand() {
         int handRoll = 0;
     }
 
     //Main method to invoke the game. Only call this from another file
-    public void PlayGame() {
-        Console.WriteLine("Welcome to the Yahtzee app!");
+     public void PlayGame() {
+        Console.WriteLine("Welcome to the Yahtzee app!\n");
         while(true) {
-            Console.WriteLine($"Turn {this.turnCounter}");
-            Console.WriteLine("Press [Enter] key to roll the dice");
-            Console.WriteLine("Type 'score' to display the score");
-            Console.WriteLine("Type 'rules' if you want to see the rules");
-            Console.WriteLine("Type 'quit' to end the game");
+            Console.WriteLine($"#################### Turn {this.turnCounter} ####################");
+            Console.WriteLine("################################################");
+            Console.WriteLine("# Press [Enter] key to roll the dice           #");
+            Console.WriteLine("# Type 'score' to display the score            #");
+            Console.WriteLine("# Type 'rules' if you want to see the rules    #");
+            Console.WriteLine("# Type 'quit' to end the game                  #");
+            Console.WriteLine("################################################\n");
 
             string userInputFromKeyboard = Console.ReadLine();
             int inputAsInt = NextUserAction(userInputFromKeyboard);
             switch (inputAsInt) {
                 //Display the score
                 case 1: 
-                     Console.WriteLine($"\nCurrent total score is: {totalScore}");
+                     Console.WriteLine($"\nCurrent total score is: {totalScore}\n");
                      continue;
                 //Display the rules
                 case 2:
@@ -128,6 +128,7 @@ class Yahtzee {
                     continue;
                 //Enter key is pressed returning an empty string
                 case 3:
+                Console.WriteLine("Rolling all the dice\n");
                     this.RollAllDice();
                     DisplayCurrentDiceValues();
                     if (IsYahtzee()) {

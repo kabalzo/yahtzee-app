@@ -5,7 +5,7 @@ namespace MyApp {
         public static void Main(String[] args) {
             Yahtzee game = new();
             game.PlayGame();
-            Console.WriteLine("Thanks for Playing!");
+            Console.WriteLine("\nThanks for Playing!");
         }
     }
 }
