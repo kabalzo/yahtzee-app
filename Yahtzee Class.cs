@@ -9,44 +9,64 @@ class Yahtzee {
         Tuple.Create("large", false, 40),
         Tuple.Create("small", false, 30),
     };
+
+    //Experimental
+    private Random newDieValue = new();
+
+    //Functional
+    /*
     private Random roll1 = new();
     private Random roll2 = new();
     private Random roll3 = new();
     private Random roll4 = new();
     private Random roll5 = new();
-
+    */
     private int totalScore = 0;
     private int yahtzeeBonus = 0;
     private int handScore = 0; 
     private int turnCounter = 1;
 
     //TODO: Change this from separate ints to 5 int elements in an array
+
+    //Experimental 
+    private int[] gameDice = {0, 0, 0, 0, 0};
+
+    //Functional
+    /*
     private int die1;
     private int die2;  
     private int die3;  
     private int die4; 
     private int die5;
+    */
 
-    //private readonly int[] ListOfDice = new int[] { die1, die2, die3, die4, die5 };
-
+    //GUI representation of a die face
+    private static readonly string dieFaceOne = "#########\n#       #\n#   #   #\n#       #\n#########";
+    private static readonly string dieFaceTwo = "#########\n# #     #\n#       #\n#     # #\n#########";
+    private static readonly string dieFaceThree = "#########\n# #     #\n#   #   #\n#     # #\n#########";
+    private static readonly string dieFaceFour = "#########\n# #   # #\n#       #\n# #   # #\n#########";
+    private static readonly string dieFaceFive = "#########\n# #   # #\n#   #   #\n# #   # #\n#########";
+    private static readonly string dieFaceSix = "#########\n# #   # #\n# #   # #\n# #   # #\n#########";
+    
+    //Rules to the game
     private readonly string theRules = "\nRoll 5 dice on your first turn\nKeep 0-5 and roll up to twice more with the rest\nFill entries on the scorecard each turn with the result of the rolls\n\nUPPER SECTION\n(Aces) Count and add only aces\n(Twos) Count and add only twos\n(Threes) Count and add only threes\n(Fours) Count and add only fours\n(Fives) Count and add only fives\n(Sixes) Count and add only sixes\nIf total score of upper is 63 or greater, bonus 35 points\n\nLOWER SECTION\n(3 of a kind) Add total of all dice\n(4 of a kind) Add total of all dice\n(Full House) Two of one kind, three of another. Score 25\n(Small straight) Sequence of 4. Score 30\n(Large straight) Sequence of 5. Score 40\n(Yahtzee) 5 of a kind. Score 50\n(Chance) Add total of all dice\n(Yahtzee bonus) 100 bonus points for each additional Yahtzee after the first\n";
 
     private void RollSingleDie(int die) {
         switch (die) {
             case 1:
-                die1 = roll1.Next(1,7);
+                gameDice[0] = newDieValue.Next(1,7);
                 break;
             case 2:
-                die2 = roll2.Next(1,7);
+                gameDice[1] = newDieValue.Next(1,7);
                 break;
             case 3:
-                die3 = roll3.Next(1,7);
+                gameDice[2] = newDieValue.Next(1,7);
                 break;
             case 4:
-                die4 = roll4.Next(1,7);
+                gameDice[3] = newDieValue.Next(1,7);
                 break;
             case 5:
-                die5 = roll5.Next(1,7);
+                gameDice[4] = newDieValue.Next(1,7);
                 break;
         }
     }
@@ -60,7 +80,7 @@ class Yahtzee {
 
     //Display the values of all 5 die at any given moment
     private void DisplayCurrentDiceValues() {
-        Console.WriteLine("Die 1: " + die1 + " | Die 2: " + die2 + " | Die 3: " + die3 + " | Die 4: " + die4 + " | Die 5: " + die5);
+        Console.WriteLine("Die 1: " + gameDice[0] + " | Die 2: " + gameDice[1] + " | Die 3: " + gameDice[2] + " | Die 4: " + gameDice[3] + " | Die 5: " + gameDice[4]);
     }
     
     //Ask user if they want to see the rules or proceed to the game
@@ -70,7 +90,7 @@ class Yahtzee {
 
     //Check to see if all the dice on any given hand are all the same
     private bool IsYahtzee() {
-            if (die1 == die2 && die2 == die3 && die3 == die4 && die4 == die5) {
+            if (gameDice[0] == gameDice[1] && gameDice[1] == gameDice[2] && gameDice[2] == gameDice[3] && gameDice[3] == gameDice[4]) {
                 Console.WriteLine("Yahtzee!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                 return true;
             }
@@ -139,20 +159,30 @@ class Yahtzee {
             //For right now just add the total of the dice to the total score
             //TODO: Implement a scoring procedure to add the score to the right portion of the scorecard and account for points
             if (endTurnEarly == "y") {
-                totalScore += die1 + die2 + die3 + die4 + die5;
+                totalScore += gameDice[0] + gameDice[1] + gameDice[2] + gameDice[3] + gameDice[4];
                 break;
             }
         }
         //TODO: This is where you would have to select the scorcard slot of your hand having rolled three times
         Console.Write("Results of the final throw are: ");
         DisplayCurrentDiceValues();
-        totalScore += die1 + die2 + die3 + die4 + die5;
+        totalScore += gameDice[0] + gameDice[1] + gameDice[2] + gameDice[3] + gameDice[4];
         Console.WriteLine($"Current total score is: {totalScore}\n");
     }
 
     //Main method to invoke the game. Only call this from another file
      public void PlayGame() {
         Console.WriteLine("Welcome to the Yahtzee app!\n");
+
+        /*
+        Console.WriteLine(dieFaceOne + "\n");
+        Console.WriteLine(dieFaceTwo + "\n");
+        Console.WriteLine(dieFaceThree + "\n");
+        Console.WriteLine(dieFaceFour + "\n");
+        Console.WriteLine(dieFaceFive + "\n");
+        Console.WriteLine(dieFaceSix + "\n");
+        */
+        
         while(true) {
             Console.WriteLine($"#################### Turn {this.turnCounter} ####################");
             Console.WriteLine("################################################");
